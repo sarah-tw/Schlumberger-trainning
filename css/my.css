@@ -1,0 +1,55 @@
+/* #spare_time div p { color: purple; }
+#dance { color: black; }
+p { color: red !important;}
+.hobby { color: yellow; }
+.interest { color: blue; }
+#spare_time {display: none;}*/
+
+body:before {
+	content: 'ThoughtWorks';
+	display: block;
+	width: 100px;
+	position: absolute;
+	bottom: 10px;
+	color: #aaa;
+	left: 50%;
+	margin-left: -35px;
+	font-size: 12px;
+}
+.three-technical {
+	list-style: none;
+}
+.three-technical li {
+	list-style: none;
+	background-color: yellow;
+	padding: 40px;
+	margin: 10px;
+	color: #666;
+}
+.my-div{
+  width:100px;
+  height:100px;
+  background:yellow;
+  transition:width 2s;
+  margin-left: 50px !important;
+}
+
+.my-div:hover { width:300px; }
+.font-yellow {
+	color: yellow;
+}
+.font-red {
+	color: red;
+	font-weight: bold;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.what-is-html {
+	text-align: left;
+}
+.what-is-html strong {
+	color: yellow;
+}
