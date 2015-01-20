@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>3 Pages in 3 days</title>
+  <style>
+  div
+    {
+    width:100px;
+    height:100px;
+    background:red;
+    padding: 30px;
+    position:relative;
+    border-radius: 100%;
+    animation:myfirst 5s infinite ;
+    -moz-animation:myfirst 5s infinite ; /* Firefox */
+    -webkit-animation:myfirst 5s infinite ; /* Safari and Chrome */
+    -o-animation:myfirst 5s infinite ; /* Opera */
+    }
+
+    @keyframes myfirst
+    {
+    0%   {background:red; left:0px; top:0px;}
+    50%  {background:pink; left:400px; top:0px;}
+    100% {background:red; left:0px; top:0px;}
+    }
+
+    @-moz-keyframes myfirst /* Firefox */
+    {
+    0%   {background:red; left:0px; top:0px;}
+    50%  {background:pink; left:400px; top:0px;}
+    100% {background:red; left:0px; top:0px;}
+    }
+
+    @-webkit-keyframes myfirst /* Safari and Chrome */
+    {
+    0%   {background:red; left:0px; top:0px;}
+    50%  {background:pink; left:400px; top:0px;}
+    100% {background:red; left:0px; top:0px;}
+    }
+
+    @-o-keyframes myfirst /* Opera */
+    {
+    0%   {background:red; left:0px; top:0px;}
+    50%  {background:pink; left:400px; top:200px;}
+    100% {background:red; left:0px; top:0px;}
+    }
+
+   
+  </style>
+</head>
+<body>
+<div>Here is a annimation implemented by keyframes</div>
+
+</body>
+</html>

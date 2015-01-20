@@ -26,17 +26,24 @@ body:before {
 	margin: 10px;
 	color: #666;
 }
-.my-div{
-  width:100px;
-  height:100px;
-  background:yellow;
-  transition:width 2s;
-  margin-left: 50px !important;
-}
+.agenda-for-3days {
+	list-style:none;
 
-.my-div:hover { width:300px; }
+}
+.agenda-for-3days li {
+	margin-top: 10%;
+	float: left;
+	list-style: none;
+	margin: 20px;
+}
+.agenda-for-3days li a{
+	color: #eaa353 !important;
+}
+.agenda-for-3days li a:hover {
+	text-decoration: underline;
+}
 .font-yellow {
-	color: yellow;
+	color: #eaa353;
 }
 .font-red {
 	color: red;
@@ -51,5 +58,5 @@ body:before {
 	text-align: left;
 }
 .what-is-html strong {
-	color: yellow;
+	color: #eaa353;
 }
