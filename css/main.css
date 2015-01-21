@@ -25,6 +25,15 @@ body {
 	border-bottom: 3px solid #f04e98;
 	padding: 0.5em 0;
 }
+.agenda-table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+.agenda-table td {
+	font-size: 30px;
+	padding: 15px 0;
+	border: 1px solid #f04e98;
+}
 .three-technical {
 	list-style: none;
 }
