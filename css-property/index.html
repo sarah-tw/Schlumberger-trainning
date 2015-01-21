@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CSS</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="../lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>CSS</h1>
+					<h3>The HTML Presentation Framework</h3>
+					<p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h3>BLOCK</h3>
+						<p>Block hava Dimensions</p>
+						<ul>
+							<li>width,max-width,min-width</li>
+							<li>height,max-height,min-height</li>
+							<li>margin</li>
+						</ul>
+					</section>
+					<section>
+						<h3>INLINE</h3>
+						<p>margin-left, margin-right</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>BASIC</h2>
+
+					</section>
+					<section>
+						<h3>padding</h3>
+						<ul>
+							<li>padding-top</li>
+							<li>padding-right</li>
+							<li>padding-bottom</li>
+							<li>padding-left</li>
+						</ul>
+						<div data-markdown>
+							 <script type="text/template">
+		            ``` css
+		              padding: 5px 15px 0 10px;
+		            ```
+		            </script> 
+						</div>
+						<p class="fragment roll-in t-gray">padding: top right bottom left</p>
+					</section>
+					<section>
+						<h3>margin</h3>
+						<ul>
+							<li>margin-top</li>
+							<li>margin-right</li>
+							<li>margin-bottom</li>
+							<li>margin-left</li>
+						</ul>
+						<div data-markdown>
+						 <script type="text/template">
+	            ``` css
+	              margin: 5px 15px 0 10px;
+	            ```
+	            </script> 
+						</div>
+						<p class="fragment roll-in t-gray">margin: 0 auto</p>
+					</section>
+					<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+						<h3>background</h3>
+						<ul>
+							<li>background-color</li>
+							<li>background-image</li>
+							<li>background-position</li>
+							<li>background-repeat</li>
+						</ul>
+						<p>background: color image repeat position</p>
+						<a href="example/background.html" target="_blank">Example</a>
+					</section>
+					<section>
+						<h3>border</h3>
+						<ul>
+							<li>border-width</li>
+							<li>border-style</li>
+							<li>border-color</li>
+						</ul>
+						<p class="fragment roll-in t-gray">border: width style color</p>
+						<style>
+						.bor1 {display:inline-block;margin:40px auto!important;border-width:40px!important;border-style: solid!important;border-color:#36e #f60 #c00 #0f0!important;}
+						</style>
+						<div class="fragment roll-in bor1"></div>
+					</section>
+					
+					<section>
+						<h3>Length Units</h3>
+						<p>px, em, rem</p>
+					</section>
+
+					<section>
+						<h3>color</h3>
+						<ul>
+							<li>English Name</li>
+							<li>#000000 - #FFFFFF</li>
+							<li>RGB(0, 128, 255)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>font</h3>
+						<ul>
+							<li>font-family</li>
+							<li>font-size</li>
+							<li>font-style</li>
+							<li>font-weight</li>
+							<li>line-height</li>
+							<li>letter-spacing</li>
+						</ul>
+						<p class="fragment roll-in t-gray">font: style weight size/line-height family</p>
+					</section>
+					
+					<section>
+						<h3>other text</h3>
+						<ul>
+							<li>text-align</li>
+							<li>text-decoration</li>
+							<li>text-indent</li>
+							<li>text-overflow</li>
+							<li>white-space</li>
+							<li>word-break</li>
+							<li>vertical-align</li>
+						</ul>
+					</section>
+					
+				</section>
+
+				<section>
+					<section>
+						<h3>list</h3>
+						<ul>
+							<li>list-style</li>
+						</ul> 
+					</section>
+					<section>
+						<h3>table</h3>
+						<ul>
+							<li>border-collapse</li>
+							<li>border-spacing</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>POSITION</h2>
+					</section>
+					<style>
+						.c-p {width:162px;height:162px;margin:40px auto 0!important;position:relative;}
+						.c-p-1 {width:160px;height:160px;border:1px solid #ccc!important;position:absolute;left:20px;top:-20px;line-height:160px!important;font-size:14px!important;}
+						.c-p-2 {width:160px;height:160px;border:1px dotted #666!important;position:relative;}
+					</style>
+					<section>
+						<h3 class="vs">RELATIVE</h3>
+						<p>position:<span class="t-blue">relative</span></p>
+						<p class="fragment roll-in t-gray">相对定位以自身为参照物做偏移</p>
+<pre class="fragment roll-in"><code>.c-p-1 {
+	width:100px;
+	height:100px;
+	border:1px dotted #ccc;
+	position:relative;
+	left:20px;
+	top:-20px;
+}</code></pre>
+						<div class="fragment roll-in c-p">
+							<div class="c-p-2"></div>
+							<div class="fragment roll-in c-p-1">relative</div>
+						</div>
+					</section>
+					<style>
+						.c-pa {width:300px;height:200px;margin:40px auto 0!important;position:relative;background-color:#333!important;}
+						.c-p-3 {width:160px;height:160px;border:1px solid #ccc!important;position:absolute;bottom:0;right:20px;line-height:160px!important;font-size:14px!important;}
+					</style>
+					<section>
+						<h3 class="vs">ABSOLUTE</h3>
+						<p>position:<span class="t-blue">absolute</span></p>
+						<p class="fragment roll-in t-gray">绝对定位以最近的拥有position属性的祖先为参照物做偏移</p>
+<pre class="fragment roll-in"><code>.c-p-3 {
+	width:100px;
+	height:100px;
+	border:1px dotted #ccc;
+	position:absolute;
+	right:20px;
+	bottom:0;
+}</code></pre>
+						<div class="fragment roll-in c-pa">
+							<div class="c-p-4"></div>
+							<div class="fragment roll-in c-p-3">absolute</div>
+						</div>
+					</section>
+					<section>
+						<h3 class="vs">FIXED</h3>
+						<p>position:<span class="t-blue">fixed</span></p>
+						<p class="">固对定位以浏览器内容显示区窗口为参照物做偏移</p>
+						<a href="http://www.slideshare.net/" target="_blank">Example</a>
+					</section>
+					<section>
+						<h3>top, right, bottom, left</h3>
+					</section>
+					<style>
+					.c-pz {width:300px;height:200px;margin:40px auto 0!important;position:relative;background-color:#333!important;}
+					.c-z {
+	width:160px;
+	height:160px;
+	position:absolute;
+	font-size:14px!important;
+	line-height:160px!important;
+}
+.c-z-1 {background-color:#369;top:0;left:0;z-index:2;}
+.c-z-2 {background-color:#c00;right:0;bottom:0;z-index:1;}
+					</style>
+					<section>
+						<h3>Z-INDEX</h3>
+						<pre class="fragment roll-in"><code>.c-z {
+	width:100px;
+	height:100px;
+	border:1px dotted #ccc;
+	position:absolute;
+}
+.c-z-1 {background-color:#369;top:0;left:0;z-index:2;}
+.c-z-2 {background-color:#c00;right:0;bottom:0;z-index:1;}
+</code></pre>
+						<div class="fragment roll-in c-pz">
+							<div class="c-z c-z-1">z-index:2</div>
+							<div class="c-z c-z-2">z-index:1</div>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<h3>OVERFLOW</h3>
+					<ul>
+						<li class="highlight-blue">visible</li>
+						<li>hidden</li>
+						<li>scroll</li>
+						<li>auto</li>
+					</ul>
+					<p class="fragment roll-in t-gray">overflow-x, overflow-y</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>EXTEND</h2>
+						<p></p>
+					</section>
+					<section>
+						<h3>DEFAULT inherit</h3>
+						<p class="highlight-blue">font, text, line-height, color, list-style-*...</p>
+						共用css
+					</section>
+					<style>
+						#warp {color:red}
+						.c1 {color:blue; font-style:italic!important;}
+						.c2 {color:green}
+					</style>
+				</section>
+			
+				<section>
+					<scrtion>
+						<h2>PSEUDO CLASSES</h2>
+						<p>
+							A pseudo-class is used to define a special state of an element.
+						</p>
+					</section>
+					<section>
+						<h3>a</h3>
+						<ol>
+							<li>:link</li>
+							<li>:visitied</li>
+							<li>:hover</li>
+							<li>:active</li>
+						</ol>
+					</section>
+					<section>
+						<h3>input</h3>
+						<ul>
+							<li>:disabled</li>
+							<li>:enabled</li>
+							<li>:checked</li>
+							<li>:focus</li>
+						</ul>
+					</section>
+					<section>
+						<h3>other</h3>
+						<ul>
+							<li>:first-child</li>
+							<li>:last-child</li>
+							<li>:nth-child(n)</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>PSEUDO ELEMENTS</h3>
+						<ul>
+							<li>::before</li>
+							<li>::after</li>
+						</ul>
+					</section>
+					<section>
+						<h3>content</h3>
+						<p class="highlight-blue">before与after只有设置content属性，伪元素才会生效</p>
+					</section>
+					<style>
+							.cp1::before {
+								content:"“";
+							}
+							.cp1::after {
+								content: "”"
+							}
+					</style>
+					<section data-markdown>
+						<script type="text/template">
+							###USE
+
+							```css
+							.cp1::before {
+								content:"“";
+							}
+							.cp1::after {
+								content: "”"
+							}
+
+							```
+						</script>
+						<div class="fragment roll-in cp1">content</div>
+
+					</section>
+				</section>
+				<section>
+					<h2>CSS Compitible</h2>
+					<ul>
+						<li>-moz-*</li>
+						<li>-webkit-</li>
+						<li>-ms-</li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="http://www.w3schools.com">W3 School</a>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="../lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../plugin/zoom-js/zoom.js', async: true },
+					{ src: '../plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
