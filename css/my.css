@@ -5,26 +5,35 @@ p { color: red !important;}
 .interest { color: blue; }
 #spare_time {display: none;}*/
 
-body:before {
-	content: 'ThoughtWorks';
-	display: block;
-	width: 100px;
-	position: absolute;
-	bottom: 10px;
-	color: #aaa;
-	left: 50%;
-	margin-left: -35px;
-	font-size: 12px;
+body {
+	background: #000;
+}
+.reveal p,
+.reveal div,
+.reveal h2,
+.reveal h3,
+.reveal section {
+	font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+.reveal h2{
+	padding: 0.5em 0;
+	border-top: 3px solid #f04e98;
+	border-bottom: 3px solid #f04e98;
+}
+.reveal h3 {
+	border-bottom: 3px solid #f04e98;
+	padding: 0.5em 0;
 }
 .three-technical {
 	list-style: none;
 }
 .three-technical li {
 	list-style: none;
-	background-color: yellow;
+	background-color: #f6eb61;
 	padding: 40px;
 	margin: 10px;
-	color: #666;
+	color: #333;
 }
 .agenda-for-3days {
 	list-style:none;
@@ -36,14 +45,12 @@ body:before {
 	list-style: none;
 	margin: 20px;
 }
-.agenda-for-3days li a{
-	color: #eaa353 !important;
-}
+
 .agenda-for-3days li a:hover {
 	text-decoration: underline;
 }
-.font-yellow {
-	color: #eaa353;
+.font-pink {
+	color: #f04e98;
 }
 .font-red {
 	color: red;
@@ -58,5 +65,5 @@ body:before {
 	text-align: left;
 }
 .what-is-html strong {
-	color: #eaa353;
+	color: #f04e98;
 }

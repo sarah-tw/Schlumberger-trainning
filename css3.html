@@ -18,7 +18,6 @@
         <small>Presented by</small>
         <p>Si Xiaojing aka Sarah</p>
   		</section>
-      <section>
         <section>
           <div data-markdown>
             <script type="text/template" >
@@ -26,11 +25,12 @@
               ```css
                 border-radius:10px;
                 -moz-border-radius:10px; /* old Firefox */
+                -ms-border-radius:10px; /* old Firefox */
                 -webkit-border-radius:10px; /* old Chrome */
               ```
             </script>
           </div>
-          <p style="border: 1px solid red; border-radius: 8px;padding:5px;">border radius allow you add rounded corner</p>
+          <p style="border: 1px solid #f04e98; border-radius: 8px;padding:10px;">border radius allow you add rounded corner</p>
         </section>
 
         <section>
@@ -45,12 +45,7 @@
               ```
             </script>
           </div>
-          <p style="background: yellow; #eaa353: black;box-shadow: 0px 0px 8px 4px white;border-radius: 8px; padding:5px;">This box has a white shadow</p>
-        </section>
-
-        <section>
-          <p>background-size</p>
-          <p><a href="example/background.html" target="_blank">Example</a></p>          
+          <p style="background: #f04e98; #eaa353: black;box-shadow: 0px 0px 8px 4px white;border-radius: 8px; padding:5px;">This box has a white shadow</p>
         </section>
 
         <section>
@@ -58,14 +53,14 @@
             <script type="text/template" >
               text-shadow
               ```css
-                border-radius:10px;
-                -moz-border-radius:10px; /* old Firefox */
-                -webkit-border-radius:10px; /* old Chrome */
+                text-shadow: 2px 2px 3px #f04e98;
+                -moz-text-shadow: 2px 2px 3px #f04e98; /* old Firefox */
+                -webkit-text-shadow: 2px 2px 3px #f04e98; /* old Chrome */
               ```
             </script>
           </div>
-          <p style="text-shadow: 5px 5px 5px red; color: white;">This text has shadow</p>
-        </section>
+          <p style="text-shadow: 5px 5px 5px #f04e98; color: white;">This text has shadow</p>
+        </section>  
 
         <section>
           <p>word-wrap</p>
@@ -75,8 +70,27 @@
           ```
           </div>
           <img src="images/word-wrap.png" alt="">
+        </section>              
+
+        <section>
+          <p>background-size</p>
+          <p><a href="example/background.html" target="_blank">Example</a></p>          
+        </section>
+
+        <section>
+          <p>opacity</p>
         </section>
         
+        <section>
+          <p>rgba</p>
+          <div data-markdown>
+          ```css
+            background-color: rgba(255, 255, 255, 0.3);
+          ```
+          </div>
+          <img src="images/rgba.png" alt="">
+        </section>
+
         <section>
           <p>2D & 3D transform</p>
           <ul>
@@ -101,7 +115,6 @@
           <br>
           <a href="example/keyframe.html" target="_blank">Example</a>          
         </section>
-      </section>
 
   	</div>
   </div>
