@@ -25,17 +25,16 @@ body {
 	border-bottom: 3px solid #f04e98;
 	padding: 0.5em 0;
 }
-.agenda-table {
-	border-spacing: 0;
-	border-collapse: collapse;
-}
-.agenda-table td {
-	font-size: 30px;
-	padding: 15px 0;
-	border: 1px solid #f04e98;
-}
 .three-technical {
 	list-style: none;
+}
+.each-day {
+	text-align: left;
+	padding-top: 30px !important;
+}
+.each-day span {
+	vertical-align: top;
+	margin-right: 30px;
 }
 .three-technical li {
 	list-style: none;
@@ -44,27 +43,11 @@ body {
 	margin: 10px;
 	color: #333;
 }
-.agenda-for-3days {
-	list-style:none;
 
-}
-.agenda-for-3days li {
-	margin-top: 10%;
-	float: left;
-	list-style: none;
-	margin: 20px;
-}
-
-.agenda-for-3days li a:hover {
-	text-decoration: underline;
-}
 .font-pink {
 	color: #f04e98;
 }
-.font-red {
-	color: red;
-	font-weight: bold;
-}
+
 .clearfix:after {
 	content: '';
 	display: block;
