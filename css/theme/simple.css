@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
  * A simple theme for reveal.js presentations, similar
  * to the default theme. The accent color is #319b42.
@@ -59,7 +57,7 @@ body {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #0000f1;
+  color: #319b42;
   text-shadow: none;
   border: none; }
 
@@ -106,16 +104,16 @@ body {
   border-top-color: #319b42; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #0000f1; }
+  border-right-color: #319b42; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #0000f1; }
+  border-left-color: #319b42; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #0000f1; }
+  border-bottom-color: #319b42; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #0000f1; }
+  border-top-color: #319b42; }
 
 /*********************************************
  * PROGRESS BAR
