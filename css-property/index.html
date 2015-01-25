@@ -192,11 +192,24 @@
 						.bor1 {display:inline-block;margin:40px auto!important;border-width:40px!important;border-style: solid!important;border-color:#36e #f60 #c00 #0f0!important;}
 						</style>
 						<div class="fragment roll-in bor1"></div>
+						<img src="../images/border-triangle.png" style="margin: 40px 0;" class="fragment" alt="" width="170">
 					</section>
 					
 					<section>
 						<h3>Length Units</h3>
-						<p>px, em, rem</p>
+						<p>px, em, %, rem</p>
+							<div data-markdown>
+						 <script type="text/template">
+	            ``` css
+	              font-size: 20px;
+	              font-size: 1.2em;
+	              font-size: 120%;
+	              font-size: 1.5rem;
+	            ```
+	            </script> 
+						</div>
+						<p>em and % will relative parent</p>
+						<p>rem will relative to root, like body</p>
 					</section>
 
 					<section>
@@ -206,6 +219,15 @@
 							<li>#000000 - #FFFFFF</li>
 							<li>RGB(0, 128, 255)</li>
 						</ul>
+						<div data-markdown>
+						 <script type="text/template">
+	            ``` css
+	              color: red;
+	              color: #ff0000;
+	              color: rgb(255,0,0);
+	            ```
+	            </script> 
+						</div>						
 					</section>
 
 					<section>
@@ -218,11 +240,12 @@
 							<li>line-height</li>
 							<li>letter-spacing</li>
 						</ul>
-						<p class="fragment roll-in t-gray">font: style weight size/line-height family</p>
+						<p>font: style weight size/line-height family</p>
+						<a href="../example/hello.html" target="_blank">Example</a>
 					</section>
 					
 					<section>
-						<h3>other text</h3>
+						<h3>text</h3>
 						<ul>
 							<li>text-align</li>
 							<li>text-decoration</li>
@@ -240,7 +263,8 @@
 					<section>
 						<h3>list</h3>
 						<ul>
-							<li>list-style</li>
+							<li>list-style-type</li>
+							<li>list-style-position</li>
 						</ul> 
 					</section>
 					<section>
@@ -249,6 +273,7 @@
 							<li>border-collapse</li>
 							<li>border-spacing</li>
 						</ul>
+						<img src="../images/border-collapse.gif" alt="">
 					</section>
 				</section>
 
@@ -350,13 +375,20 @@
 					<section>
 						<h3>inherit</h3>
 						<p class="highlight-blue">font, text, line-height, color, list-style-*...</p>
-						share css
+						<p>
+						share css with descendant
+						</p>
+					</section>
+					<section>
+						<img src="../images/inherit.png" alt="">
+
 					</section>
 					<style>
 						#warp {color:red}
 						.c1 {color:blue; font-style:italic!important;}
 						.c2 {color:green}
 					</style>
+
 				</section>
 			
 				<section>
@@ -374,6 +406,16 @@
 							<li>:hover</li>
 							<li>:active</li>
 						</ol>
+						<div data-markdown>
+						 <script type="text/template">
+	            ``` css
+	              a:link { color: red; }
+	              a:visitied { color: black; }
+	              a:hover { color: blue; }
+	              a:active { color: pink; }
+	            ```
+	            </script> 
+						</div>						
 					</section>
 					<section>
 						<h3>input</h3>
@@ -383,6 +425,17 @@
 							<li>:checked</li>
 							<li>:focus</li>
 						</ul>
+						<div data-markdown>
+						 <script type="text/template">
+	            ``` css
+	              input:disabled {  }
+	              input:enabled {  }
+	              input:checked { }
+	              input:focus {  }
+	            ```
+	            </script> 
+						</div>						
+
 					</section>
 					<section>
 						<h3>other</h3>
@@ -391,6 +444,17 @@
 							<li>:last-child</li>
 							<li>:nth-child(n)</li>
 						</ul>
+						<p>They can be used to any selector.</p>
+						<div data-markdown>
+						 <script type="text/template">
+	            ``` css
+	            li {margin-right: 20px;}
+	            li:last-child {margin-right: 0;}
+	            ```
+	            </script> 
+						</div>						
+
+						<img src="../images/last-child.png" alt="">
 					</section>
 				</section>
 
@@ -401,11 +465,15 @@
 							<li>::before</li>
 							<li>::after</li>
 						</ul>
+
+					</section>
+					<section>
+						<img src="../images/pseudo-element.png" alt="" width="500">
 					</section>
 					<section>
 						<h3>content</h3>
 						<p class="highlight-blue">
-							must set content property it can work</p>
+							must set content property</p>
 					</section>
 					<style>
 							.cp1::before {
@@ -432,14 +500,6 @@
 						<div class="fragment roll-in cp1">content</div>
 
 					</section>
-				</section>
-				<section>
-					<h3>CSS Compatibility</h3>
-					<ul>
-						<li>-moz-*</li>
-						<li>-webkit-</li>
-						<li>-ms-</li>
-					</ul>
 				</section>
 
 				<section>
