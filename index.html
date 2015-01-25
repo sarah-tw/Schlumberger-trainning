@@ -314,6 +314,7 @@
         <img src="images/article-example.png" alt="">
       </section>
       <section>
+        <h3>List</h3>
         <div>ul, ol, li</div>
         <div style="text-align: left;">
         <img src="images/ul-example1.png" alt="" style="max-width: 48%;">
@@ -389,7 +390,7 @@
             </script> 
         </div>
         <img src="images/box-model.png" alt="box model" title="box model image">
-        <img src="images/asided.png"  alt="box model" width="200">
+        <img src="images/asided.png"  alt="box model" title="box model image" width="200">
       </section>
 
       <section>
@@ -408,7 +409,18 @@
       <section>
       <h3>example</h3>
       <img src="images/dom-structure.gif" >
-        
+      </section>
+      <section>
+        <h3>Review tags</h3>
+        <ul>
+          <li>h1, h2, h3, h4, h5, h6</li>
+          <li>p, div, section</li>
+          <li>aside, header, footer, nav, article</li>
+          <li>table, th, tr, td</li>
+          <li>form, label, input</li>
+          <li>ul, ol, li</li>
+          <li>a, img, span</li>
+        </ul>
       </section>
     </section>
 
@@ -596,6 +608,17 @@
       <section>
          <h3>Guess color</h3>
         <div data-markdown>
+          <script type="text/template">
+            ``` CSS
+            p { color: red; }
+            .hobby { color: yellow; }
+            .interest { color: blue; }
+            ```
+            ```html
+            <p class="interest hobby">I love dance</p>
+            ```
+          </script>
+
         </div>
 
         <p class="fragment" data-fragment-index="0" style="color:blue">Blue</p>
@@ -673,7 +696,7 @@
       </section>            
       
       <section>
-        <h2>Get it?</h2>
+        <h2>Got it?</h2>
       </section>
       
       <section>
@@ -691,25 +714,41 @@
     <section>
       <section>
         <h3>Box model</h3>
+      </section>
+      <section>
         <img src="images/box-model.png" alt="" style="width: 600px;">
+        <div data-markdown>
+          <script type="text/template">
+            ``` CSS
+            margin: 20px;
+            padding: 10px;
+            border: 5px solid red;
+            width: 100px;
+            height: 50px;
+            ```
+          </script>
+        </div>
       </section>
       <section>
         <p>block tag, inline tag, inline-block</p>
         <p>What's difference?</p>
       </section>
       <section>
-        <h3>Property display</h3>
+        <h3>css Property display</h3>
         <ul class="fragment">
           <li>Block: take whole width of its parent width</li>
           <li>Inline: will only take the spaces it needed</li>
-          <li>Inline-block: take spaces it needed and then you can give it ore width</li>
+          <li>Inline-block: take spaces it needed and then you can give it more width</li>
           <li>None: hidden from page</li>
         </ul>
+        <br>
         <br>
         <a class="fragment" href="example/hello.html" target="_blank">Example</a>
       </section>
     </section>
-
+    <section>
+      <h3>css layout property</h3>
+    </section>
     <!-- Action - 1 HTML -->
     <section>
       <section>
