@@ -43,6 +43,15 @@ body {
 	margin: 10px;
 	color: #333;
 }
+.my-div{
+  width:100px;
+  height:100px;
+  background:#f04e98;
+  transition:width 2s;
+  margin-left: 50px !important;
+}
+
+.my-div:hover { width:300px; }
 
 .font-pink {
 	color: #f04e98;

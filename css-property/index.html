@@ -47,28 +47,83 @@
 					Si Xiaojing aka Sarah
 				</section>
 
+				<section>
+					<section>
+						<h3>Review</h3>						
+					</section>
+					<section>
+						<p>What's box size</p>
+						<div data-markdown>
+							```css
+							margin: 10px 30px;
+							border: 5px solid red;
+							padding: 5px 15px;
+							height: 30px;
+							width: 100px;
+							```
+						</div>
+						<ul class="puzzle">
+							<li>A.140*50</li>
+							<li>B.200*70</li>
+							<li>C.120*40</li>
+							<li>D.Uncertain</li>
+						</ul>
+						<p class="fragment">D</p>     
+					</section>
+
+					<section>
+						<p>What's box size</p>
+						<div data-markdown>
+							```css
+							display: block;
+							margin: 10px 30px;
+							border: 5px solid red;
+							padding: 5px 15px;
+							height: 30px;
+							width: 100px;
+							```
+						</div>
+						<ul class="puzzle">
+							<li>A.140*50</li>
+							<li>B.200*70</li>
+							<li>C.120*40</li>
+							<li>D.Uncertain</li>
+						</ul>
+						<p class="fragment">A</p>
+					</section>
+					<section>
+						<p>Where am I?</p>
+						<div data-markdown>
+		          <script type="text/template">
+		            ```html
+		             	<div>You</div>
+		             	<p style="float:left">I</p>
+		             	<p>She</p>
+		            ```
+		          </script>							
+						</div>					
+						<ul >
+							<li style="list-style:none">A. Left side of You</li>
+							<li style="list-style:none">B. Right side of You</li>
+							<li style="list-style:none">C. Left side of She</li>
+							<li style="list-style:none">D. Sit alone in second row</li>
+						</ul>
+						<p class="fragment">C</p>
+					</section>
+
+				</section>
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h3>BLOCK</h3>
-						<p>Block hava Dimensions</p>
-						<ul>
-							<li>width,max-width,min-width</li>
-							<li>height,max-height,min-height</li>
-							<li>margin</li>
-						</ul>
-					</section>
-					<section>
-						<h3>INLINE</h3>
-						<p>margin-left, margin-right</p>
-					</section>
-				</section>
-
-				<section>
-					<section>
 						<h2>BASIC</h2>
-
 					</section>
+					<section>
+						<p>Special properties for block and inline block</p>
+						<ul>
+							<li>min-width, max-width</li>
+							<li>min-height, max-height</li>
+						</ul>
+					</section>					
 					<section>
 						<h3>padding</h3>
 						<ul>
@@ -85,6 +140,15 @@
 		            </script> 
 						</div>
 						<p class="fragment roll-in t-gray">padding: top right bottom left</p>
+						<div data-markdown class="fragment">
+							 <script type="text/template">
+		            ``` css
+		              padding: 5px 15px;
+		            ```
+		            </script> 
+						</div>
+						<p class="fragment roll-in t-gray">padding: top&bottom right&left</p>
+
 					</section>
 					<section>
 						<h3>margin</h3>
@@ -98,10 +162,12 @@
 						 <script type="text/template">
 	            ``` css
 	              margin: 5px 15px 0 10px;
+	              margin: 10px 20px;
 	            ```
 	            </script> 
 						</div>
 						<p class="fragment roll-in t-gray">margin: 0 auto</p>
+						<a class="fragment" target="_blank" href="../example/hello.html">Example</a>
 					</section>
 					<section data-transition="slide" data-background="#f6eb61" data-background-transition="zoom">
 						<h3>background</h3>
