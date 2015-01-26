@@ -7,6 +7,7 @@
     div, p
     {
     width: 100px;
+    height: 100px;
     background-color:yellow;
     border:1px solid black;
     padding: 10px;
@@ -28,11 +29,11 @@
     }
     div#scale {
       margin:150px;
-      transform:scale(2,4);
-      -ms-transform:scale(2,4); /* IE 9 */
-      -moz-transform:scale(2,4); /* Firefox */
-      -webkit-transform:scale(2,4); /* Safari and Chrome */
-      -o-transform:scale(2,4); /* Opera */
+      transform:scale(2,2);
+      -ms-transform:scale(2,2); /* IE 9 */
+      -moz-transform:scale(2,2); /* Firefox */
+      -webkit-transform:scale(2,2); /* Safari and Chrome */
+      -o-transform:scale(2,2); /* Opera */
     }
     #rotatey1 {
       margin-top: 50px;
@@ -54,9 +55,9 @@
 <body>
 <div>This is a normal div</div>
 
-<div id="translate">this is second div, but it has been translated.</div>
-<div id="rotate">this is third div, but it has been rotated.</div>
-<div id="scale">this is fourth div, but it has been scaled.</div>
+<div id="translate">translated element</div>
+<div id="rotate">rotated element</div>
+<div id="scale">scaled element</div>
 
 <p id="rotate1" class="animated_div">2D transform</p></body>
 <p id="rotatey1" class="animated_div">3D transform</p>

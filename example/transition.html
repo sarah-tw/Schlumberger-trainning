@@ -8,28 +8,32 @@
     {
     width: 60px;
     background-color:yellow;
-    border:1px solid black;
+    border:1px solid #ccc;
     padding: 10px;
     }
-	#rotatey1 {
+	.rotate2 {
+		width: 400px;
+		background-color: black;
 		margin-top: 50px;
 		transition: all 2s;
 	}
-	#rotatey1:hover {
+	.rotate2:hover {
 		transform: rotateY(180deg); 
 		-webkit-transform: rotateY(180deg);
 	}
-	#rotate1 {
+	.rotate1 {
+		margin-top: 40px;
 		transition: all 5s;	
-		width: 60px;
-		height: 60px;
+		width: 160px;
+		height: 5px;
+		padding: 2px;
 		background: yellow;
 		color: black;
+		text-align: center;
+		font-size: 30px;
 	}
-	#rotate1:hover {
+	.rotate1:hover {
 		background: red;
-		width: 100px;
-		height: 100px;
 		transform: rotate(360deg); 
     /*transform: scale(3);	*/
 	}
@@ -37,8 +41,10 @@
   </style>
 </head>
 <body>
-<div>This is a normal div</div>
-
-<p id="rotate1" class="animated_div">2D 旋转</p></body>
-<p id="rotatey1" class="animated_div">3D 旋转</p>
+	2D rotation
+<p class="rotate1" class="animated_div">•</p>
+<p class="rotate2" class="animated_div">
+	<img src="../images/face2.png" width="400" alt="">
+</p>
+</body>
 </html>
