@@ -167,6 +167,7 @@
 	            </script> 
 						</div>
 						<p class="fragment roll-in t-gray">margin: 0 auto</p>
+						<p class="fragment roll-in t-gray">margin: auto</p>
 						<a class="fragment" target="_blank" href="../example/hello.html">Example</a>
 					</section>
 					<section data-transition="slide" data-background="#f6eb61" data-background-transition="zoom">
@@ -176,9 +177,10 @@
 							<li>background-image</li>
 							<li>background-position</li>
 							<li>background-repeat</li>
+							<li>background-size</li>
 						</ul>
 						<p>background: color image repeat position</p>
-						<a href="../example/background.html" target="_blank">Example</a>
+						<a href="http://0.0.0.0:8080" target="_blank">Example</a>
 					</section>
 					<section>
 						<h3>border</h3>
@@ -187,7 +189,9 @@
 							<li>border-style</li>
 							<li>border-color</li>
 						</ul>
-						<p class="fragment roll-in t-gray">border: width style color</p>
+						<p class="">border: width style color</p>
+						<a href="http://0.0.0.0:8080" target="_blank">Example</a>
+						<br>
 						<style>
 						.bor1 {display:inline-block;margin:40px auto!important;border-width:40px!important;border-style: solid!important;border-color:#36e #f60 #c00 #0f0!important;}
 						</style>
@@ -208,9 +212,21 @@
 	            ```
 	            </script> 
 						</div>
-						<p>em and % will relative parent</p>
-						<p>rem will relative to root, like body</p>
+						<p>em and % are relative units</p>
+						<p>rem will relative to root</p>
+						<a href="http://0.0.0.0:8080" target="_blank">Example</a>
 					</section>
+
+				<section>
+					<h3>OVERFLOW</h3>
+					<ul>
+						<li class="highlight-blue">visible</li>
+						<li>hidden</li>
+						<li>scroll</li>
+						<li>auto</li>
+					</ul>
+					<p class="fragment roll-in t-gray">overflow-x, overflow-y</p>
+				</section>					
 
 					<section>
 						<h3>color</h3>
@@ -228,7 +244,7 @@
 	            ```
 	            </script> 
 						</div>						
-					</section>
+					</section>					
 
 					<section>
 						<h3>font</h3>
@@ -241,7 +257,7 @@
 							<li>letter-spacing</li>
 						</ul>
 						<p>font: style weight size/line-height family</p>
-						<a href="../example/hello.html" target="_blank">Example</a>
+						<a href="http://0.0.0.0:8080" target="_blank">Example</a>
 					</section>
 					
 					<section>
@@ -250,6 +266,7 @@
 							<li>text-align</li>
 							<li>text-decoration</li>
 							<li>text-indent</li>
+							<li>text-transform</li>
 							<li>text-overflow</li>
 							<li>white-space</li>
 							<li>word-break</li>
@@ -279,7 +296,9 @@
 
 				<section>
 					<section>
-						<h2>POSITION</h2>
+						<h3>POSITION</h3>
+						<p>specifies the type of positioning method</p>
+						<p>relative|absolute|fixed|static</p>
 					</section>
 					<style>
 						.c-p {width:162px;height:162px;margin:40px auto 0!important;position:relative;}
@@ -360,16 +379,6 @@
 					</section>
 				</section>
 
-				<section>
-					<h3>OVERFLOW</h3>
-					<ul>
-						<li class="highlight-blue">visible</li>
-						<li>hidden</li>
-						<li>scroll</li>
-						<li>auto</li>
-					</ul>
-					<p class="fragment roll-in t-gray">overflow-x, overflow-y</p>
-				</section>
 
 				<section>
 					<section>
@@ -379,10 +388,7 @@
 						share css with descendant
 						</p>
 					</section>
-					<section>
-						<img src="../images/inherit.png" alt="">
-
-					</section>
+	
 					<style>
 						#warp {color:red}
 						.c1 {color:blue; font-style:italic!important;}
@@ -474,16 +480,11 @@
 						<h3>content</h3>
 						<p class="highlight-blue">
 							must set content property</p>
+							<p>even the content is empty </p>
 					</section>
-					<style>
-							.cp1::before {
-								content:"“";
-							}
-							.cp1::after {
-								content: "”"
-							}
-					</style>
-					<section data-markdown>
+					
+					<section>
+						<div data-markdown>
 						<script type="text/template">
 							###USE
 
@@ -494,18 +495,26 @@
 							.cp1::after {
 								content: "”"
 							}
-
+							```
+							```html
+							<div>content</div>
 							```
 						</script>
+						</div>
 						<div class="fragment roll-in cp1">content</div>
-
+						<img class="fragment" src="../images/border-triangle.png" alt="">
 					</section>
 				</section>
 
 				<section>
 					<h3>THE END</h3>
+					<p>Reference:</p>
 					<p>
 						<a href="http://www.w3schools.com">W3 School</a>
+						<br>
+						<a href="http://www.codeschool.com">codeschool</a>
+						<br>
+						<a href="http://codepen.io/">codepen</a>
 					</p>
 				</section>
 

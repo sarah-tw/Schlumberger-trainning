@@ -20,3 +20,9 @@
 	margin-right: 15px;
 	font-size: 30px;
 }
+.cp1::before {
+	content:"“";
+}
+.cp1::after {
+	content: "”"
+}
