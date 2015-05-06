@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>3 Day 3 Pages</title>
   <link rel="stylesheet" href="css/reveal.min.css"/>
-  <link rel="stylesheet" href="css/theme/default.css" id="theme"/>
+  <link rel="stylesheet" href="css/theme/beige.css" id="theme"/>
   <!-- For syntax highlighting -->
   <link rel="stylesheet" href="lib/css/zenburn.css"/>
   <link rel="stylesheet" href="css/main.css"/>
@@ -437,32 +437,156 @@
 
     <section>
       <section>
-        <h3>what's css</h3>  
-        <p>CSS stands for <span class="font-pink">C</span>ascading <span class="font-pink">S</span>tyle <span class="font-pink">S</span>heet.</p>
-        <p>A language for describing the <span class="font-pink">presentation</span> of Web pages.</p>
+        <h2>CSS</h2>  
+        <p><span class="font-pink">C</span>ascading <span class="font-pink">S</span>tyle <span class="font-pink">S</span>heet.</p>
+      </section>
+
+      
+
+      <section>
+        <h3>HTML</h3>
+        <img src="images/house-withoutcss.jpg" alt="" />
+      </section>
+      
+      <section>
+        <h3>HTML+CSS</h3>
+        <img width="600" src="images/house-withcss.jpg" alt="" />
+      </section>
+
+      <!-- <section>
+        <h3>HTML TAGS REVIEW</h3>
+        <img width="500" src="images/jimu-tag.jpg" alt="" />
+      </section> -->
+
+      <section>
+        <h3>"CSS, 史上最简单的语言"</h3>
+        <h4 class="text-right">－白岩松</h4>
+      </section>
+      
+      <section>
+        <h3>CSS怎么写？</h3>
+        <img src="images/thinking.png" width="500" />
       </section>
 
       <section>
-        <div>Separation of content from presentation</div>
+        <div class="text-code-super">
+              color: <span>orange;</span>
+        </div>      
       </section>
 
       <section>
-        <h3>How to write css?</h3>
-       <div data-markdown>
-           <script type="text/template">
-            ``` css
-              color: red;
-              font-size: 20px;
-              background-color: yellow;
-              border: 1px solid black;
-            ```
-            </script> 
-        </div>        
+        html
+        <div data-markdown class="text-code">
+        <script type="text/template">
+          ```HTML
+          <div>Hello kitty</div>
+          ```
+        </script>
+        </div>
+        <br>
+        css
+        <div data-markdown class="text-code">
+        <script type="text/template">
+          ```CSS
+          color: yellow;
+          width: 300px;
+          background-color: green;
+          text-align: center;
+          ```
+        </script>
+       </div>   
       </section>
+
+      <section>
+        html
+        <div data-markdown class="text-code">
+        <script type="text/template">
+          ```HTML
+          <div style="color: yellow; width: 300px; background-color: green; text-align: center;">Hello kitty</div>
+          ```
+        </script>
+        </div>
+        <br>
+        <div class="fragment" style="margin: 0 auto; color:yellow; width: 300px; background-color:green; text-align: center; ">
+          hello, kitty
+        </div>       
+      </section>
+      
+      <section>
+        <h3>CSS 属性</h3>
+        <div class="text-code-middle">
+              <em class="fragment">width</em><br>
+              <em class="fragment">height</em><br>
+              <em class="fragment">background</em><br>
+              <em class="fragment">color</em><br>
+              <em class="fragment">font-size</em><br>
+              <em class="fragment">margin</em><br>
+              <em class="fragment">padding</em><br>
+              <em class="fragment">...</em>
+        </div>      
+      </section>
+
+      <section>
+        <h3>CSS 属性及值</h3>
+        <div class="text-code-middle">
+              <em>width: </em><span class="fragment">300px;</span><br>  
+              <em>height: </em><span class="fragment">100px;</span><br>  
+              <em>background: </em><span class="fragment">green;</span><br>  
+              <em>color: </em><span class="fragment">blue;</span><br>  
+              <em>font-size: </em><span class="fragment">14px;</span><br>  
+              <em>margin: </em><span class="fragment">20px;</span><br>  
+              <em>padding: </em><span class="fragment">10px;</span><br>
+              <em>...</em><span class="fragment">...</span>
+        </div>      
+      </section>
+
     </section>
     <section>  
       <section>
-        <h3>CSS selector</h3>
+        <h3>ID & CLASS</h3>
+      </section>
+
+      <section>
+        <h3>ID</h3> 
+        <div data-markdown class="text-code">
+        <script type="text/template">
+          ```HTML
+          <div id="kitty" >I am Kitty.</div>
+
+          <div id="tom" >Iam Tom.</div>
+          ```
+        </script>
+        </div>
+      </section>
+
+      <section>
+        <h3>CLASS</h3> 
+        <div data-markdown class="text-code">
+        <script type="text/template">
+          ```HTML
+          <div id="kitty" class="cat" >I am Kitty.</div>
+
+          <div id="tom" class="cat" >I am Tom.</div>
+          ```
+        </script>
+        </div>
+      </section>
+
+      <section>
+        <h3>CLASSES</h3> 
+        <div data-markdown class="text-code">
+        <script type="text/template">
+          ```HTML
+          <div id="kitty" class="cat animal" >I am Kitty.</div>
+
+          <div id="tom" class="cat animal" >I am Tom.</div>
+          ```
+        </script>
+        </div>
+      </section>
+
+      <section>
+        <h3>CSS选择器</h3>
         <ul>
           <li>Tag</li>
           <li>Class</li>
@@ -471,207 +595,259 @@
       </section>
 
       <section>
-        <div data-markdown>
+        <div data-markdown class="text-code">
         <script type="text/template">
-          ### Tag selector
-          ```CSS
-          h1 {
-            font-size: 30px;
-            color: pink;
-            text-transform: uppercase;
-          }
-          ```
+          ### Tag
           ```HTML
-          <h1>Hello world</h1>
+          <p>Hello cat</p>
+          ```
+          ```CSS
+          p {
+            font-size: 40px;
+            color: pink;
+          }
           ```
         </script>
         </div>
-        <h1 style="font-size: 30px; color: #f04e98; text-shadow: none;">Hello world</h1>
+        <br>
+        <a class="fragment" style="font-size: 40px; color: #f04e98; text-shadow: none;">Hello cat</a>
       </section>
 
       <section>
-        <div data-markdown>
+        <div data-markdown class="text-code">
           <script type="text/template">
-            ### class selector
+            ### id
+            ```HTML
+            <p id="kitty">Hello kitty</p>
+            ```
             ```CSS
-            .font-pink {
+            #kitty {
+              font-size: 40px;
               color: pink;
             }
-            .font-small {
-              font-size: 30px;
-            }
-            ```
-            ```HTML
-            <h1 class="font-pink">Hello world</h1>
-            <div class="font-pink">I love css</div>
-            <p class="font-small font-pink">I love html</p>
-            ```
+            ```            
           </script>
         </div>
-        <h1 style="font-size: 40px; color: #f04e98; text-shadow: none;">Hello world</h1>
-        <div style="color: #f04e98; text-shadow: none;">I love css</div>
-        <p style="font-size: 20px; color: #f04e98; text-shadow: none;">I love html</p>        
+        <br>
+        <p class="fragment" style="font-size: 40px; color: #f04e98; text-shadow: none;">Hello kitty</p>  
       </section>
 
       <section>
-        <div data-markdown>
+        <div data-markdown class="text-code">
           <script type="text/template">
-            ### id selector
-            ```CSS
-            #title {
-              font-size: 30px;
-              color: pink;
-              text-transform: uppercase;  
-            }
-            ```
+            ### class
             ```HTML
-            <h1 id="title">Hello world</h1>
+            <div class="cat">Hello Kitty</div>
+            <div class="cat">Hello Tom</div>
             ```
+            ```CSS
+            .cat {
+              color: blue;
+            }
+            ```            
           </script>
         </div>
-        <h1 style="font-size: 30px; color: #f04e98; text-shadow: none;">Hello world</h1>  
-        <p>ID must be unique on each page</p>      
+        <br>
+        <div class="fragment" style="color: blue">Hello cat</div>
       </section>
+
+      <section>
+        <h3>CSS小游戏</h3>
+        <img src="images/css-game.png" width="600" style="border:0;"/>
+      </section>
+
     </section>
 
     <section>
       <section>
-        <h3>How to link css</h3>
-        <ul>
-          <li>Inline style( inside tag itself )</li>
-          <li>Internal stylesheet( inside head tag )</li>
-          <li>External stylesheet</li>
-        </ul>
+        <h3>CSS放在哪里？</h3>
+        <img src="images/thinking.png" width="500" />
       </section>
 
-      <section data-markdown>
+      <section>
+        <div data-markdown class="text-code">
         <script type="text/template">
-          ### Inline style
+          ### 1. 直接写在标签中
           ``` HTML
-          <span style="color: red;">Hello</span>
+          <span style="color: red;">Jerry</span>
           ```
         </script>
+        </div>
       </section>
-      <section data-markdown>
+
+      <section>
+        <div  data-markdown class="text-code">
         <script type="text/template">
-          ### Internal stylesheet
+          ### 2. 写在文档中
           ```HTML
           <head>
             <style>
-              .title {
+              .cat {
                 font-size: 30px;
                 margin: 60px auto 10px;
               }
             </style>
           </head>
+          <body>
+            <div class="cat">Tom</div>
+          </body>
           ```
         </script>
+        </div>  
       </section>
-      <section data-markdown>
+      <section>
+        <div data-markdown class="text-code">
         <script type="text/template">
-          ### External stylesheet
+          ### 3. 链接专门的CSS文档
           ```HTML
-          <link rel="stylesheet" href="http://cdn.bootcss.com/bootswatch/3.3.1/cerulean/bootstrap.min.css">
-          <link rel="stylesheet" href="stylesheet/main.css">
+          <head>
+            <link rel="stylesheet" href="stylesheet/main.css">
+          </head>
           ```
         </script>
+        </div>
+        <br>
+        main.css
+        <div data-markdown class="text-code">
+        <script type="text/template">
+          ```CSS
+          .cat {
+              font-size: 30px;
+              margin: 60px auto 10px;
+          }
+          ```
+        </script>
+        </div>
       </section>   
+      
       <section>
-        strongly recommend external stylesheet
-      </section>   
+        <h3>3种方式哪家强？请抢答。</h3>
+        <img src="images/wangxiaoya.jpg" width="500" />
+      </section>
+
+      <section>
+        a 链接
+        <div data-markdown class="text-code">
+        <script type="text/template">
+          ```HTML
+          <a href="www.google.com">google</a>
+          ```
+        </script>
+        </div>
+        <br>
+        css
+        <div data-markdown class="text-code">
+        <script type="text/template">
+          ```CSS
+          a { text-decoration: underline; }
+          a:link {color:#FF0000;}      /* unvisited link */
+          a:visited {color:#000000;}  /* visited link */
+          a:hover {color:#FF00FF;}  /* mouse over link */
+          a:active {color:#0000FF;}  /* selected link */
+          ```
+        </script>  
+       </div>   
+       <a class="a-link" href="http://www.baidu.com" target="_blank">google</a>
+       <style>
+          a.a-link { text-decoration: underline!important;}
+          a.a-link:link {color:#FF0000!important;}      /* unvisited link */
+          a.a-link:visited {color:#000000!important;}  /* visited link */
+          a.a-link:hover {color:#FF00FF!important;}  /* mouse over link */
+          a.a-link:active {color:#0000FF!important;}  /* selected link */
+       </style>
+      </section>
 
     </section>
 
     <section>
       <section>
-        <h3>Priority of css</h3>
-        <div>tag < class< id < inline < important</div>
+        <h3>CSS 作用优先级</h3>
+        <div>tag < class< id < inline</div>
       </section>       
 
       <section>
-        <h3>Guess color</h3>
-        <div data-markdown>
+        <h3>猜颜色</h3>
+        <div data-markdown class="text-code">
           <script type="text/template">
+            ```html
+            <p class="hobby">I love runing.</p>
+            ```
             ``` CSS
             p { color: red; }
-            .hobby { color: yellow; }
-            ```
-            ```html
-            <p class="hobby">I love dance</p>
+            .hobby { color: green; }
             ```
           </script>
         </div>
-
-        <p class="fragment" data-fragment-index="0" style="color:yellow;">Yellow</p>
+        <br>
+        <p class="fragment" data-fragment-index="0" style="color:green;">I love runing</p>
       </section>  
 
       <section>
-         <h3>Guess color</h3>
-        <div data-markdown>
+         <h3>猜颜色</h3>
+        <div data-markdown class="text-code">
           <script type="text/template">
+            ```html
+            <p class="interest hobby">I love dance</p>
+            ```
             ``` CSS
             p { color: red; }
             .hobby { color: yellow; }
             .interest { color: blue; }
             ```
-            ```html
-            <p class="interest hobby">I love dance</p>
-            ```
           </script>
 
         </div>
-
+        <br>
         <p class="fragment" data-fragment-index="0" style="color:blue">Blue</p>
       </section>  
 
-      <section>
-        <h3>Guess color</h3>
-        <div data-markdown>
+      <!-- <section>
+        <h3>猜颜色</h3>
+        <div data-markdown class="text-code">
           <script type="text/template">
+            ```html
+            <div id="spare_time">
+                <p class="hobby interest" id="dance">
+                  I love dance
+                </p>
+            </div>
+            ```
             ``` CSS
-            #spare_time div p { color: purple; }
+            #spare_time p { color: purple; }
             #dance { color: black; }
             p { color: red; }
             .hobby { color: yellow; }
             .interest { color: blue; }
-            ```
-            ```html
-            <div id="spare_time">
-              <div>
-                <p class="hobby interest" id="dance">I love dance</p>
-              </div>
-            </div>
             ```
           </script>
         </div>
           <p class="fragment" data-fragment-index="0" style="color:purple">Purple</p>
-      </section>            
+      </section>  -->           
 
 
       <section>
-        <h3>Guess color</h3>
-        <div data-markdown>
+        <h3>猜颜色</h3>
+        <div data-markdown class="text-code">
           <script type="text/template">
-            ``` CSS
-            #spare_time div p { color: purple; }
-            #dance { color: black; }
-            p { color: red; }
-            .hobby { color: yellow; }
-            .interest { color: blue; }
-            ```
             ```html
             <div id="spare_time">
-              <div>
-                <p class="hobby interest" id="dance" style="color: pink">I love dance</p>
-              </div>
+                <p id="dance" class="hobby interest" style="color: orange">
+                  I love dance
+                </p>           
             </div>
             ```
+            ``` CSS
+            p { color: red; }
+            #dance { color: black; }            
+            .hobby { color: yellow; }
+            .interest { color: blue; }
+            ```            
           </script>
         </div>
-          <p class="fragment" data-fragment-index="0" style="color:pink">Pink</p>
+          <p class="fragment" data-fragment-index="0" style="color:orange">Orange</p>
       </section>            
 
-      <section>
+      <!-- <section>
         <h3>Guess color</h3>
         <div data-markdown>
           <script type="text/template">
@@ -693,31 +869,37 @@
         </div>
 
           <p class="fragment" data-fragment-index="0" style="color: red;">Red</p>
-      </section>            
+      </section>   -->          
       
       <section>
-        <h2>Got it?</h2>
+        <h3>tag < class < id < inline</h3>
       </section>
-      
+
       <section>
-        <div>tag < class< id < inline < important</div>
-      </section>
-      <section>
-        <div>Try to avoid using '!important', inline style, id</div>
-        <p class="font-pink">use class</p>
+        <h3>合理地编写id和class</h3>
       </section>
 
     </section>
+    
     <section>
-      <h2>How does page know spaces?</h2>
+      <h3>元素围观 <span class="fragment">+</span> <span class="fragment">布局</span></h3>
+      <img src="images/jimu.png" alt="" width="650">
     </section>
+    
     <section>
       <section>
-        <h3>Box model</h3>
+        <h3>框模型</h3>
+        <h3>定位</h3>
+        <h3>浮动</h3>
       </section>
+
+      <section>
+        <h3>框模型</h3>
+      </section>
+
       <section>
         <img src="images/box-model.png" alt="" style="width: 600px;">
-        <div data-markdown>
+        <div data-markdown class="text-code">
           <script type="text/template">
             ``` CSS
             margin: 20px;
@@ -729,12 +911,58 @@
           </script>
         </div>
       </section>
+
       <section>
-        <p>block tag, inline tag, inline-block</p>
-        <p>What's difference?</p>
+        <h3>显示(display)</h3>
       </section>
+
       <section>
-        <h3>css Property display</h3>
+        <h3 style="font-size: 40px;">block，inline-block，inline元素？</h3>
+        <img src="images/chensizhe.jpg" alt="">
+      </section>
+
+      <section>
+        <h3 style="font-size: 40px;">inline元素</h3>
+        <ul>
+          <li>不能设置元素的宽高；</li>
+          <li>可以设置左右边距，不能设置上"下"边距；</li>
+          <li>显示在”一行里面“；</li>
+        </ul>
+        <br>
+        <br>
+        <p>span,a,label</p>
+      </section>
+
+      <section>
+        <h3 style="font-size: 40px;">block元素</h3>
+        <ul>
+          <li>可以设定元素的宽高；</li>
+          <li>可以设定所有边距；</li>
+          <li>默认左右两边不能有元素；</li>
+        </ul>
+        <br>
+        <br>
+        <p>div,h1,p,ul,ol,form</p>
+      </section>
+
+      <section>
+        <h3 style="font-size: 40px;">inline-block元素</h3>
+        <ul>
+          <li>可以设定元素的宽高；</li>
+          <li>可以设定所有边距；</li>
+          <li>显示在”一行里面“；</li>
+        </ul>
+        <br>
+        <br>
+        <p>img,input,button</p>
+      </section>
+      
+      <section>
+        <img src="images/display.png" alt="">
+      </section>
+
+      <!-- <section>
+        <h3>元素display的形式</h3>
         <ul class="fragment">
           <li>Block: take whole width of its parent width</li>
           <li>Inline: will only take the spaces it needed</li>
@@ -744,49 +972,54 @@
         <br>
         <br>
         <a class="fragment" href="example/hello.html" target="_blank">Example</a>
-      </section>
+      </section> -->
     </section>
+    
     <section>
-      <h3>css layout property</h3>
+      <h3>定位</h3>
     </section>
+    
     <!-- Action - 1 HTML -->
+
     <section>
       <section>
-        <h3>Float and clear</h3>
-        <ol>
-          <li>Why need float and how</li>
-          <li>Why need clear float and how</li>
-        </ol>
-      </section>
-
-      <section>
-        <h3>How to do float?</h3>
-        <p>float: left</p>
-        <p>float: right</p>  
+        <h3>定位</h3>
+        <p>positon: relative;</p>
+        <p>positon: absolute;</p>
+        <p>positon: fixed;</p>
       </section>
     </section>
+
+    <section>
+      <section>
+        <h3>浮动</h3>
+        <p>float: left;</p>
+        <p>float: right;</p>  
+      </section>
+    </section>
+
+    <section>
+        <img src="images/reading.jpeg" alt="" width="240">
+    </section>
+
     <section>
       <h3>The end</h3>
       <div>Q & A</div>
     </section>
 
     <section>
-      <h3 style="font-size: 30px;">Some css properties you may use:</h3>
-      <ul>
-        <li style="list-type:none">margin: 20px 10px;</li>
-        <li style="list-type:none">padding: 5px 10px;</li>
-        <li style="list-type:none">text-align: center;</li>
-        <li style="list-type:none">text-decoration: none;</li>
-        <li style="list-type:none">color: white;</li>
-        <li style="list-type:none">display: inline-block;</li>
-        <li style="list-type:none">background-color: #93CFB1;</li>
-        <li style="list-type:none">background-image: url('../images/bg.png');</li>
-        <li style="list-type:none">background-repeat: no-repeat;</li>
-        <li style="list-type:none">border: 1px solid #eee;</li>
-        <li style="list-type:none">float: left;</li>
-        <li style="list-type:none">border-top: none;</li>
-        <li style="list-type:none">border-bottom: none;</li>
-      </ul>
+      <h3>CSS示例</h3>
+      <div class="text-code-middle">
+              <em>width: </em><span>300px;</span><br>  
+              <em>background: </em><span>green;</span><br>  
+              <em>color: </em><span>blue;</span><br>  
+              <em>font-size: </em><span>14px;</span><br>  
+              <em>margin: </em><span>20px;</span><br>  
+              <em>padding: </em><span>10px;</span><br>
+              <em>float: </em><span>left;</span><br>
+              <em>display: </em><span>block;</span><br>
+              <em>border: </em><span>1px solid #000000;</span>
+        </div>  
       
     </section>
   </div>
